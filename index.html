@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+        <script src="js/match.min.js"></script>
+        <script src="js/jq.min.js"></script>
+        <script src="js/highscores.js"></script>
+        <title>Memory Blocks</title>
+    </head>
+    <body class="unselectable">
+        <div class="container">
+            <main>
+                <div class="game-controls text-center">
+                    <button class="retro-border btn-skill">
+                        Nivel:
+                        <select class="retro-border">
+                            <option value="little">Tablero Pequeño</option>
+                            <option value="big">Tablero Grande</option>
+                        </select>
+                    </button>
+                    <button class="retro-border restart">Nuevo Juego</button>
+                    <button class="retro-border show-highscores">Puntuaciones</button>
+                    
+                                       
+                </div>
+                <div class="background background-easy">
+                </div>
+                <div class="congrats retro-window retro-border hide">
+                    <div class="title">Felicitaciones!</div>
+                    <div class="enter-name hide">
+                        <p class="text-left">Tienes uno de los mejores puntajes.<br>
+                        Por favor ingrese su nombre...</p>
+                        <form class="text-center">
+                            <input type="text" class="user-name">
+                            <button class="retro-border ok-btn">OK</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="window-about retro-window retro-border">
+                    <div class="title">Bienvenido a Memory Blocks!</div>
+                    <div class="text-center">
+                    <p>Voltee las fichas haciendo clic sobre en ellas. Si las imágenes son idénticas, desaparecerán del mosaico. Si no son idénticos, volverán a posición inicial.</p>
+                    <p>Continúe volteando los pares hasta que se hayan encontrado todas las coincidencias y no haya más fichas.</p>
+                    <p>La calificación es de dos maneras. Primero, por la cantidad de segundos que le tomó en encontrar todas las coincidencias. En segundo lugar, por el número total de pares que necesita voltear para encontrar todas las coincidencias.</p>
+                    <p>Las puntuaciones más altas se muestran en la lista de puntuaciones más altas.</p>
+                    <p>¡Buena Suerte!</p></div>
+                    <div class="text-center">
+                    <p>* * * * * * * * * *</p>
+                    <!-- <p>SYMANTEC GAME PACK</p> -->
+                    <p>Memory Blocks</p>
+                    <p>Version 2.020 Actualizada</p>                    
+                    <p>Juan José Jaramillo H.</p>
+                    <p>Karolina Lopera</p>
+                    <p>Juan Esteban García</p>
+                    <!-- <p>Ported to web, with &lt;3 and author's permission, by <a href="http://ionicabizau.net" target="blank">Ionică Bizău</a>.</p> -->
+                    <button class="retro-border close-about">OK</button>
+                    </div>
+                </div>
+
+                <div class="highscores retro-window retro-border">
+                    <div class="title"><span class="game-skill-type">Pequeño</span> Tablero de Puntuaciones</div>
+                    <div class="board fastest-times">
+                        <div class="board-title">Tiempos más Rápidos</div>
+                        <table border="0">
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Segundos</td>
+                                    <td></td>
+                                    <td>Total Pares Volteados</td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Segundos</td>
+                                    <td></td>
+                                    <td>Total Pares Volteados</td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Segundos</td>
+                                    <td></td>
+                                    <td>Total Pares Volteados</td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Segundos</td>
+                                    <td></td>
+                                    <td>Total Pares Volteados</td>
+                                </tr>
+                                <tr>
+                                    <td>5.</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Segundos</td>
+                                    <td></td>
+                                    <td>Total Pares Volteados</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="board fewest-pairs">
+                        <div class="board-title">Pares totales menos volteados</div>
+                        <table border="0">
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Segundos</td>
+                                    <td></td>
+                                    <td>Total Pares Volteados</td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Segundos</td>
+                                    <td></td>
+                                    <td>Total Pares Volteados</td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Segundos</td>
+                                    <td></td>
+                                    <td>Total Pares Volteados</td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Segundos</td>
+                                    <td></td>
+                                    <td>Total Pares Volteados</td>
+                                </tr>
+                                <tr>
+                                    <td>5.</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Segundos</td>
+                                    <td></td>
+                                    <td>Total Pares Volteados</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="controls">
+                        <button class="retro-border ok-btn">OK</button>
+                        <button class="retro-border reset-btn">Resetear Puntuaciones</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <small>Tiempo: <span class="time">0</span> Total Pares Volteados: <span class="pairs-count">0</span></small>
+                </div>
+                <div class="game wrap">
+                </div>
+            </main>
+            <div class="templates hide">
+                <div>
+                    <img src="{img}">
+                </div>
+            </div>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
